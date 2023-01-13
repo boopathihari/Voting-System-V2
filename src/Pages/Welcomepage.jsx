@@ -7,15 +7,22 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import avatar1 from '../static/images/avatar/av1.jpg';
 import avatar2 from '../static/images/avatar/av2.jpg';
 import avatar3 from '../static/images/avatar/av3.jpg';
-
+import { useNavigate } from "react-router-dom";
 
 const WelcomePage = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/votingPage");
+  };
+
+
   return (
     <div className='welContainer'>
     <Grid className='subContainer' container spacing={2}>
       <Grid item xs={4} className="title">
          <h1 className='WelHeading'>Welcome<br></br><span className='subHead'>Voting System Application</span></h1>
-         <Button variant="contained" className='GetStartBtn' endIcon={<KeyboardArrowRightIcon style={{fontSize:"24px",marginBottom: "3px"}}/>}>Ready to Vote</Button>
+         <Button variant="contained" onClick={handleClick} className='GetStartBtn' endIcon={<KeyboardArrowRightIcon style={{fontSize:"24px",marginBottom: "3px"}}/>}>Ready to Vote</Button>
       </Grid>
 
 
@@ -84,15 +91,20 @@ const WelcomePage = () => {
         
 
         <Grid container spacing={2} minHeight={160} className="CandidGrid3">
-          <Grid xs={6} display="flex" justifyContent="center" alignItems="center" className='candidGrid'>
+        <Grid item xs={3}>
+          {/* <Item>1</Item> */}
+        </Grid>
+          <Grid xs={3} display="flex" justifyContent="center" alignItems="center" className='candidGrid '>
             <Avatar src={avatar1} size="lg" className='avt'/>
             <span  className='CandidIntro'>Hi Im <span className='candidName'>ARIVUMATHI</span> </span>   
           </Grid>
-          <Grid xs={6} display="flex" justifyContent="center" alignItems="center" className='candidGrid'>
+          <Grid xs={4} display="flex" justifyContent="center" alignItems="center" className='candidGrid '>
             <Avatar src={avatar2} size="lg" className='avt'/>
             <span  className='CandidIntro'>Hi Im <span className='candidName'>MADHUMITHA</span></span>
-
           </Grid> 
+          <Grid item xs={2}>
+          {/* <Item>1</Item> */}
+        </Grid>
         </Grid>
       </Grid>
     </Grid>

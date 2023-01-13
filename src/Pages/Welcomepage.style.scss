@@ -67,6 +67,14 @@
             gap: 14px;
             width: 50%;
          }
+
+         .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
         }
     }
 

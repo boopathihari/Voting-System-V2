@@ -1,0 +1,68 @@
+.WinnerListContainer{
+    
+
+    .GSList{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+
+    }
+    
+    .JSList{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .GSTitle{
+        text-align: center;
+        margin-top: 100px;
+        font-size: 50px;
+        color: white;
+    }
+
+    .JSTitle{
+        font-size: 50px;
+        text-align: center;
+        margin-top: 100px;
+        color: #343a40;
+    }
+
+    .subTitleListGS{
+        color: #66B2FF;
+    }
+
+    .subTitleListJS{
+        color: #0076EC;
+    }
+
+    .WinnerListJS{
+        background: #a5d8ff;
+        height: 100vh;
+    }
+
+    .TopList{
+        color: #0076EC;
+        margin-right: 44px;
+        font-size: 42px;
+        margin-left: 14px;
+    }
+
+    .VotesCount{
+        font-size: 20px;
+        font-weight: 700;
+        color: #1971c2;
+    }
+
+    .TotalCounts{
+        color: white;
+        margin-left: 20px;
+        margin-top: 42px;
+        
+
+        .Counts{
+            font-size: 40px;
+            color: #66B2FF;
+        }
+    }
+}
