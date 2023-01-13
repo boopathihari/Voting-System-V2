@@ -1,0 +1,86 @@
+.welContainer{
+    margin: 0 auto;
+    text-align: center;
+   
+    .subContainer{
+        height: 102vh;
+
+
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 28px;
+            display: flex;
+            flex-direction: column;
+
+            .startIcon{
+                font-size: 14px;
+            }
+
+            .GetStartBtn{
+                margin-top: 20px;
+                font-size: 15px;
+                font-weight: 700;
+                padding: 10px 18px;
+            }
+        }
+    
+    
+        .VoteCandid{
+         background-color: #0A1929; 
+         padding-top: 40px;
+         padding-left: 70px;
+         padding-right: 50px;
+         .avt{
+            width: 80px;
+            height: 80px;
+
+         }
+
+         .CandidGrid3{
+            margin-top: 10px;
+         }
+
+
+         .candidName{
+            color: #81bdf9;
+            font-weight: 600;
+         }
+
+         .RoleTitle{
+            color: #ffffff;
+            font-size: 40px;
+            margin-bottom: 40px;
+            margin-top: 38px;
+            letter-spacing: 4px;
+            color: #66b3ff;
+         }
+
+         .CandidIntro{
+            color: #ffffff;
+         }
+
+         .candidGrid{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            width: 50%;
+         }
+        }
+    }
+
+
+    .WelHeading{
+        text-transform: capitalize !important;
+        color: #66b3ff;
+        letter-spacing: 2px;
+        font-size: 50px;
+
+        .subHead{
+            color: #ffffff;
+        }
+        
+    }
+
+}

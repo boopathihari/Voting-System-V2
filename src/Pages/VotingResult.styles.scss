@@ -1,0 +1,71 @@
+.Card{
+    background-color: #132F4C !important;
+    border-color: #1E4976 !important;
+    width: 30rem;
+    height: 30rem;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    justify-content: center;
+    align-items: center;
+
+    .VoteForm{
+        width: 60%;
+    }
+   
+    .label{
+        color: #4dabf7 !important;
+        border-color: #4dabf7 !important;
+    }
+
+    .MuiOutlinedInput-notchedOutline{
+        border-color: #4dabf7 !important;
+    }
+
+    .MuiSelect-icon{
+        color: #4dabf7 !important;
+    }
+
+
+    .MuiSelect-select.MuiSelect-outlined.MuiInputBase-input{
+        color: white;
+    }
+    
+}
+
+.voteForm{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 35px;
+    
+    .subtitle{
+        color: #4dabf7;
+
+       
+    }
+    .subLet{
+        font-size: 60px;
+        margin-left: 20px;
+    }
+
+    .sumbitVote{
+        font-weight: 700;
+    }
+}
+
+.AlertBox{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px !important;
+    margin: 50px auto;
+
+    .MuiAlert-icon{
+        font-size: 50px;
+    }
+}
