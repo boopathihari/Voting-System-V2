@@ -29,7 +29,7 @@ app.post('/store', (req, res) => {
     const myData = new MyModel(req.body);
     myData.save()
         .then(item => {
-            // res.send("item saved to database");
+            res.send("item saved to database");
         })
         .catch(err => {
             console.log(err);
@@ -96,6 +96,26 @@ app.get('/collection-count', (req, res) => {
     });
 });
 
+
+app.get("/fetchall", (req, res) => {
+    MyModel.find((err, val) => {
+        if (err) {
+            res.status(500).json({ error: err });
+        } else {
+            res.json({ val });
+        }
+    })
+});
+
+app.delete("/DeleteAll", (req, res) => {
+    MyModel.deleteMany((err, val) => {
+        if (err) {
+            res.status(500).json({ error: err });
+        } else {
+            res.send("Deleted Successfully");
+        }
+    })
+})
 
 
 app.listen(3000, () => {
