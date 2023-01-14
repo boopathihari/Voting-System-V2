@@ -8,6 +8,8 @@ import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import './VoteResult.styles.scss';
 import { Grid } from '@mui/material';
+const BaseUrl = "https://votingvv2.onrender.com/"
+
 
 
 const VoteResult = () => {
@@ -20,7 +22,7 @@ const VoteResult = () => {
 
 
     React.useEffect(()=>{
-        fetch('http://localhost:3000/groupbyJoinSec')
+        fetch(BaseUrl+'groupbyJoinSec')
         .then(res=>res.json())
         .then(result=>setDataJS(result))
         .catch(error=>console.log(error));
@@ -28,7 +30,7 @@ const VoteResult = () => {
 
 
     React.useEffect(()=>{
-        fetch('http://localhost:3000/groupbyGeneral')
+        fetch(BaseUrl+'groupbyGeneral')
         .then(res=>res.json())
         .then(result=>setDataGS(result))
         .catch(error=>console.log(error));
@@ -37,7 +39,7 @@ const VoteResult = () => {
 
     React.useEffect(() => {
         // Make a GET request to your API endpoint that returns the collection count
-        fetch('http://localhost:3000/collection-count')
+        fetch(BaseUrl+'collection-count')
           .then(res => res.json())
           .then(data => setTotalCount(data.count))
           .catch(error => console.log(error));

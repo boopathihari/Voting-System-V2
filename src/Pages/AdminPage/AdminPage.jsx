@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -8,7 +7,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import './AdminPage.scss';
 import { Button } from '@mui/material';
-
+const BaseUrl = "https://votingvv2.onrender.com/"
 
 
 
@@ -18,14 +17,14 @@ const AdminPage = () => {
 
     
             React.useEffect(()=>{
-                fetch('http://localhost:3000/fetchall')
+                fetch(BaseUrl+'fetchall')
                 .then(res=>res.json())
                 .then(result=>setDataJS(result))
                 .catch(error=>console.log(error));
             },[]);
 
 const handleDeleteHandler = () =>{
-    fetch('http://localhost:3000/DeleteAll',{
+    fetch(BaseUrl+'DeleteAll',{
         method: 'DELETE'})
     .then(result=>{
         console.log(result)

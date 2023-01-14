@@ -10,6 +10,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Alert from '@mui/material/Alert';
 import { useNavigate } from "react-router-dom";
+const BaseUrl = "https://votingvv2.onrender.com/"
 
 
 
@@ -25,7 +26,7 @@ const VotingPage = () => {
   const [VotingFormContainer, setVotingFormContainer] = React.useState(true);
   const [GS, setGS] = React.useState('');
   const [JS, setJS] = React.useState('');
-  const[isButtonDisabled , setisButtonDisabled] = React.useState(false);
+  
 
 
   var beep = document.getElementById("myAudio"); 
@@ -57,7 +58,7 @@ const VotingPage = () => {
      console.log("Form Submitted");
      const data = { GeneralSec:GS, JoinSec:JS };
      try {
-       const response = await fetch('http://localhost:3000/store', {
+       const response = await fetch(BaseUrl+'store', {
          method: 'POST',
          headers: { 'Content-Type': 'application/json' },
          body: JSON.stringify(data)
