@@ -107,7 +107,7 @@ const VotingPage = () => {
       {
 
     alert ? <Alert variant="filled" severity="success"  className='AlertBox'>
-        Thank you for participating in the voting process. Your vote has been recorded.
+        Thank you for participating in the voting process 🎊, Your vote has been recorded 🎉
      </Alert> : null
 
      }
@@ -147,7 +147,7 @@ const VotingPage = () => {
 
       
           <FormControl className='VoteForm'>
-            <InputLabel id="demo-simple-select-label" className='label'>Join Secretary</InputLabel>
+            <InputLabel id="demo-simple-select-label" className='label'>Joint Secretary</InputLabel>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
@@ -165,7 +165,7 @@ const VotingPage = () => {
                 <MenuItem value={"MADHUMITHA"}>MADHUMITHA</MenuItem>
               </Select>
 
-              <FormHelperText className='label'>Please select join secretary</FormHelperText>
+              <FormHelperText className='label'>Please select joint secretary</FormHelperText>
           </FormControl>
 
 

@@ -70,3 +70,13 @@
         font-size: 50px;
     }
 }
+
+
+// Small lap
+@media (max-width: 1024px) {
+    .Card{
+        width: 26rem;
+        height: 26rem;    
+    }
+    
+}

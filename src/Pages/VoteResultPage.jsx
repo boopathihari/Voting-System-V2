@@ -70,7 +70,7 @@ const VoteResult = () => {
                                     variant="body2"
                                     color="text.primary"
                                 >
-                                    Number of Votes : <span className='VotesCount'>{item.count}</span>
+                                   Vote count  : <span className='VotesCount'>{item.count}</span>
                                 </Typography>
                                 
                                 </React.Fragment>
@@ -85,13 +85,13 @@ const VoteResult = () => {
             
             </List>
         </div>
-        <h3 className='TotalCounts'>Total Number of Votes : <span className='Counts'>{TotalCount}</span></h3>
+        <h3 className='TotalCounts'>Total voter participation: <span className='Counts'>{TotalCount}</span></h3>
 
   </Grid>
 
   
   <Grid item xs={6}  className="WinnerListJS">
-        <h1 className='JSTitle'><span className='subTitleListJS'>Join Secretary </span>List</h1>
+        <h1 className='JSTitle'><span className='subTitleListJS'>Joint Secretary </span>List</h1>
         <div className='GSList'>
             <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }} className="WinnerList">
                 {dataJS.map((item,index)=>(
@@ -109,7 +109,7 @@ const VoteResult = () => {
                                 variant="body2"
                                 color="text.primary"
                             >
-                                Number of Votes : <span className='VotesCount'>{item.count}</span>
+                                Vote count : <span className='VotesCount'>{item.count}</span>
                             </Typography>
                             </React.Fragment>
                         }

@@ -29,27 +29,7 @@ const WelcomePage = () => {
     <div className='welContainer'>
     <Grid className='subContainer' container spacing={2}>
       <Grid item xs={4} className="title">
-
-
-  {/* <div className="type1">
-      <Typewriter
-  
-       onInit={(typewriter)=> {
-  
-       typewriter
-       .typeString("Welcome to")
-       .pauseFor(5000)
-       .deleteAll()
-       .typeString("Welcome to")
-       .start();
-       }}
-       />
-    </div> */}
-
-
          <h1 className='WelHeading'>Welcome <br/><span className='subHead'>Voting System Application</span></h1>
-         
-
          <Button variant="contained" onClick={handleClick} className='GetStartBtn' endIcon={<KeyboardArrowRightIcon style={{fontSize:"24px",marginBottom: "3px"}}/>}>Ready to Vote</Button>
       </Grid>
 
@@ -113,10 +93,10 @@ const WelcomePage = () => {
        onInit={(typewriter)=> {
   
        typewriter
-       .typeString("Join Secretary Candidates")
+       .typeString("Joint Secretary Candidates")
        .pauseFor(1000)
        .deleteAll()
-       .typeString("Join Secretary Candidates")
+       .typeString("Joint Secretary Candidates")
        .start();
        }}
        />
